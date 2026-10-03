@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Información y política de privacidad de Family OS Backups, una herramienta personal de copias de seguridad cifradas.">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Family OS Backups · Información y privacidad</title>
+  <style>
+    :root { color-scheme: light; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #252633; background: #f3f4f7; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-size: 1rem; line-height: 1.65; }
+    main { max-width: 72ch; margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+    h1 { font-size: clamp(2rem, 5vw, 2.75rem); line-height: 1.15; letter-spacing: -.03em; margin: 0 0 1.5rem; }
+    h2 { font-size: 1.5rem; line-height: 1.3; margin: 2.5rem 0 1rem; }
+    h3 { font-size: 1.125rem; line-height: 1.4; margin: 1.75rem 0 .5rem; }
+    p, ul { margin: 0 0 1rem; }
+    ul { padding-left: 1.3rem; }
+    li { margin: .5rem 0; }
+    a { color: #343f9e; text-underline-offset: .2em; overflow-wrap: anywhere; }
+    a:focus-visible { outline: 3px solid #343f9e; outline-offset: 4px; }
+    nav { display: flex; flex-wrap: wrap; gap: .5rem 1.5rem; margin-bottom: 2.5rem; }
+    nav a { display: inline-block; padding: .65rem 0; }
+    section { scroll-margin-top: 1.5rem; }
+    .meta { font-size: .875rem; color: #545866; }
+    .notice { border-left: 3px solid #343f9e; padding-left: 1rem; }
+    footer { border-top: 1px solid #d8dbe4; margin-top: 3rem; padding-top: 1.5rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <p class="meta">Herramienta de uso personal</p>
+      <h1>Family OS Backups</h1>
+      <p>Copias de seguridad cifradas de la información de Family OS, guardadas en el Google Drive de su propietario.</p>
+      <nav aria-label="Contenido">
+        <a href="#funcionamiento">Funcionamiento</a>
+        <a href="#privacidad">Política de privacidad</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </header>
+    <section id="funcionamiento" aria-labelledby="titulo-funcionamiento">
+      <h2 id="titulo-funcionamiento">Qué hace esta herramienta</h2>
+      <p>Family OS Backups está destinada exclusivamente al propietario de una instalación privada de Family OS. Permite guardar y verificar archivos de respaldo cifrados para recuperar la información de sus aplicaciones web y mobile.</p>
+      <p>La conexión con Google Drive sirve para crear la carpeta de respaldo, subir las copias cifradas y volver a descargarlas para comprobar su integridad. No es una conexión con Gmail ni Google Calendar.</p>
+      <p class="notice">Esta es únicamente una página informativa. No contiene respaldos, datos de la familia, claves ni acceso al dashboard. Tampoco indica que una programación de copias esté activa.</p>
+    </section>
+    <section id="privacidad" aria-labelledby="titulo-privacidad">
+      <h2 id="titulo-privacidad">Política de privacidad</h2>
+      <p class="meta">Última actualización: 3 de octubre de 2026</p>
+      <h3>Datos y permisos de Google</h3>
+      <p>La herramienta solicita el permiso limitado de Google Drive <code>drive.file</code>: acceso a los archivos y carpetas que crea o que el usuario autoriza expresamente para esta aplicación. Ese permiso permite crear, consultar, descargar, actualizar y eliminar esos archivos. No concede acceso general a todo el contenido de Drive.</p>
+      <p>Los nombres, identificadores, tamaños y datos de integridad de esos archivos se utilizan exclusivamente para organizar, verificar y aplicar la retención de las copias. La aplicación no solicita acceso al correo, contactos o calendarios de Google.</p>
+      <h3>Finalidad y protección</h3>
+      <p>Los respaldos pueden incluir información privada registrada en Family OS. El proceso la cifra antes de enviarla a Google Drive. La clave privada necesaria para descifrar permanece bajo el control del propietario y no se publica en este sitio ni se entrega al proceso automático.</p>
+      <p>Las credenciales de autorización permiten al proceso de respaldo acceder a los archivos autorizados; deben mantenerse en su almacén privado de secretos, nunca en esta página o en repositorios públicos.</p>
+      <h3>Proveedores y uso de los datos</h3>
+      <p>Google Drive almacena los archivos cifrados. El entorno privado que ejecuta los respaldos procesa temporalmente los datos necesarios para crear las copias. Esta página informativa está alojada en GitHub Pages, separada de los archivos de respaldo.</p>
+      <p>Los datos obtenidos mediante Google no se venden ni se utilizan para publicidad, elaboración de perfiles o entrenamiento de modelos de inteligencia artificial. El uso y la transferencia de esos datos se limitan a las funciones de respaldo descritas y respetan la <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de Datos del Usuario de los Servicios de las APIs de Google</a>, incluidos sus requisitos de uso limitado.</p>
+      <h3>Conservación y eliminación</h3>
+      <p>La política prevista conserva las últimas 12 copias periódicas verificadas y, por separado, las copias previas a cambios importantes durante 12 meses. La aplicación de esta política depende de la activación y configuración del proceso de respaldo.</p>
+      <p>El propietario puede eliminar sus archivos desde Google Drive y revocar la autorización en <a href="https://myaccount.google.com/connections">las conexiones de su Cuenta de Google</a>. Revocar el acceso detiene las operaciones futuras, pero no elimina automáticamente las copias existentes. Eliminar todas las copias o perder la clave privada puede impedir la recuperación.</p>
+      <h3>Visitas a esta página</h3>
+      <p>Esta página no incorpora analítica, publicidad, formularios, cookies propias ni scripts de seguimiento. GitHub puede procesar datos técnicos de las visitas conforme a su <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">declaración de privacidad</a>.</p>
+    </section>
+    <section id="contacto" aria-labelledby="titulo-contacto">
+      <h2 id="titulo-contacto">Contacto y cambios</h2>
+      <p>El responsable es el propietario del <a href="https://github.com/nachomargu/family-os-backups-info">repositorio de esta página</a>. Las consultas generales pueden realizarse en sus incidencias. No publiques contraseñas, claves, archivos de respaldo ni información personal en ese espacio público.</p>
+      <p>Cualquier modificación de esta política se publicará aquí con una nueva fecha de actualización.</p>
+    </section>
+    <footer><p class="meta">Family OS Backups · Información pública; respaldos privados.</p></footer>
+  </main>
+</body>
+</html>
